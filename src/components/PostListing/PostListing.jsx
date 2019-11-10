@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import styled from "@emotion/styled";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -18,16 +19,28 @@ class PostListing extends React.Component {
     return postList;
   }
 
+
   render() {
     const postList = this.getPostList();
+    const ArticleLink = styled(Link)`
+    text-decoration: none;
+    color: #000;
+    transition: opacity 0.25s;;
+    -webkit-tap-highlight-color: rgba(255, 255, 55, 0);
+
+    &:hover h2,
+    &:focus h2 {
+    color: #6166DC;
+  }
+  `
     return (
       <div>
         {/* Your post list here. */
         postList.map(post => (
-          <Link to={post.path} key={post.title}>
-            <h1>{post.title}</h1>
+          <ArticleLink to={post.path} key={post.title}>
+            <h2>{post.title}</h2>
             <p>{post.excerpt}</p>
-          </Link>
+          </ArticleLink>
         ))}
       </div>
     );
