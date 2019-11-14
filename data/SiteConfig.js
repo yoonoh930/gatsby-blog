@@ -3,7 +3,7 @@ const config = {
   siteTitleShort: "Yoon's Blog", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "A blog for programming, science, and rants.", // Alternative site title for SEO.
   siteLogo: "", // Logo used for SEO and manifest.
-  siteUrl: "https://www.google.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://yoons.blog", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "Yoon's blog for programming, science, and rants.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
