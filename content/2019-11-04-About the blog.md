@@ -2,14 +2,9 @@
 title: "About the blog"
 cover: ""
 category: “blog"
-data: “2019-11-04"
+date: “2019-11-04"
 tags:
-    - programming
-    - more tags
-    - testing
-    - another one
-    - stuff
-    - other
+    - blogging
 ---
 
 

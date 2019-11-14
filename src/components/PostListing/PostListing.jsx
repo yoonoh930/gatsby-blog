@@ -33,12 +33,16 @@ class PostListing extends React.Component {
     color: #6166DC;
   }
   `
+  const TitleDate = styled.span`
+    color: #bbb;
+    font-size: 1.3rem;
+  `
     return (
       <div>
         {/* Your post list here. */
         postList.map(post => (
           <ArticleLink to={post.path} key={post.title}>
-            <h2>{post.title}</h2>
+            <h2>{post.title} <TitleDate>| {post.date}</TitleDate></h2>
             <p>{post.excerpt}</p>
           </ArticleLink>
         ))}
