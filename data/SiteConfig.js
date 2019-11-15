@@ -2,12 +2,12 @@ const config = {
   siteTitle: "Yoon's Blog", // Site title.
   siteTitleShort: "Yoon's Blog", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "A blog for programming, science, and rants.", // Alternative site title for SEO.
-  siteLogo: "", // Logo used for SEO and manifest.
+  siteLogo: "static/profile.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://yoons.blog", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "Yoon's blog for programming, science, and rants.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteFBAppID: "static/profile.jpg", // FB Application ID for using app insights
+  siteFBAppID: "", // FB Application ID for using app insights
   googleAnalyticsID: "UA-152600302-1", // GA tracking ID.
   disqusShortname: "yoons-blog", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
@@ -20,7 +20,7 @@ const config = {
   userLocation: "Lyon, France", // User location to display in the author segment.
   userAvatar: "../static/profile.jpg", // User avatar to display in the author segment.
   userDescription:
-    "Interested in lots of things, but because unequivalent retention skills as much as the curiosity, ended up making a new blog", // User description to display in the author segment.
+    "Interested in lots of things, but because of unequivalent retention ability to curiosity, ended up making a blog", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
