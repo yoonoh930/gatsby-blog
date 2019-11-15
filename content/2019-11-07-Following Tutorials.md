@@ -28,8 +28,6 @@ Gatsby CLI collect data anonymously but since I don’t want that, I will opt-ou
 gatsby telemetry --disable
 ```
 
-
-
 Now we can install starter template from Gatsby CLI. There are many options to start blogging. This made me think. Even though I previously said that I would learn structure of my blog and its structure, in ands out, but is it really worth going through all the hassles of installing and learning about dependencies and plugins for Gatsby?
 
 Well, since I am not trying to be a web programmer, I will install [gatsby-advanced-starter](https://www.gatsbyjs.org/starters/Vagr9K/gatsby-advanced-starter/) and learn what plugins are for and how they are used. Then I will start digging what to do for look of the site. One thing to note is that since I am not interested in using cms for the moment, I will uninstall netlify-cms-app plugin. What each plugin is for will be treated in another post. Let’s pull a skeleton blog!
