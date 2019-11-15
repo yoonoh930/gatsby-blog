@@ -24,7 +24,7 @@ Gatsby CLI collect data anonymously but since I don’t want that, I will opt-ou
 
 
 
-```bash
+```Shell
 gatsby telemetry --disable
 ```
 
@@ -36,13 +36,13 @@ Well, since I am not trying to be a web programmer, I will install [gatsby-advan
 
 
 
-```bash
+```Shell
 gatsby new blog-yoonoh https://github.com/Vagr9K/gatsby-advanced-starter
 ```
 
 
 
-```bash
+```Shell
 
 .
 ..
@@ -70,7 +70,7 @@ It even initialise git! Let’s build.
 
 
 
-```bash
+```Shell
 $ gatsby develop
 
 .
@@ -129,7 +129,7 @@ For the first warning, we have to add title to rss feed option.
 
 
 
-```bash
+```javascript
 {
       resolve: "gatsby-plugin-feed",
       options: {
@@ -178,11 +178,9 @@ In order to see the feed in action, we have to build the site and serve it.
 
 
 
-```bash
+```Shell
 $ gatsby build && gatsby serve
 ```
-
-
 
 This time, the site is ported to 9000.
 
@@ -200,7 +198,7 @@ Now let’s uninstall Netlify CMS from the blog. From the `Gatsby-config.js` fil
 
 
 
-```markdown
+```javascript
 ...
 		{
       resolve: "gatsby-plugin-netlify-cms",
