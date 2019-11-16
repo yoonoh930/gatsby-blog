@@ -1,7 +1,7 @@
 ---
-title: Following Tutorials
+title: "Following Tutorials"
 cover: ""
-category: “Programming"
+category: "Tech"
 date: “2019-11-07"
 tags:
     - programming

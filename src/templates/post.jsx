@@ -3,7 +3,9 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
+// ! Not working so trying 'disqus-react' instead
+// import Disqus from "../components/Disqus/Disqus"; 
+import { DiscussionEmbed } from 'disqus-react' 
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
@@ -12,12 +14,18 @@ import config from "../../data/SiteConfig";
 //import "./b16-tomorrow-dark.css";
 import "./post.css";
 
+export const disqusConfig = ({ slug, title }) => ({
+  shortname: process.env.GATSBY_DISQUS_NAME,
+  config: { identifier: slug, title },
+})
+
 export default class PostTemplate extends React.Component {
   render() {
     const { data, pageContext } = this.props;
     const { slug } = pageContext;
     const postNode = data.markdownRemark;
     const post = postNode.frontmatter;
+    const title = post.title;
     if (!post.id) {
       post.id = slug;
     }
@@ -44,7 +52,8 @@ export default class PostTemplate extends React.Component {
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
             <UserInfo config={config} />
-            <Disqus postNode={postNode} />
+            {/* <Disqus postNode={postNode} /> */}
+            <DiscussionEmbed {...disqusConfig({ slug, title })} /> 
             <Footer config={config} />
           </div>
         </div>
