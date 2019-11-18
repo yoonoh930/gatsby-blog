@@ -1,7 +1,7 @@
 ---
 title: "About the blog"
 cover: ""
-category: “blog"
+category: "blog"
 date: “2019-11-04"
 tags:
     - blogging

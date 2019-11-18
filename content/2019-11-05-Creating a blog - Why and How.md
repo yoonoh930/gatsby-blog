@@ -1,7 +1,7 @@
 ---
 title: "Creating a blog - Why and How"
 cover: ""
-category: “blog"
+category: "blog"
 date: ”2019-11-05"
 tags:
     - programming

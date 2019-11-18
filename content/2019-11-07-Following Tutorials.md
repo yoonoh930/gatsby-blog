@@ -2,7 +2,7 @@
 title: "Following Tutorials"
 cover: ""
 category: "Tech"
-date: “2019-11-07"
+date: "2019-11-07"
 tags:
     - programming
     - blogging

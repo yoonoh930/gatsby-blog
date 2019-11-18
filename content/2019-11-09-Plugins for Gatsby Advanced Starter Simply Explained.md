@@ -1,8 +1,8 @@
 ---
-title: Plugins for Gatsby Advanced Starter Simply Explained
+title: "Plugins for Gatsby Advanced Starter Simply Explained"
 cover: ""
-date: 2019-11-09
-category: Programming
+date: "2019-11-09"
+category: "Programming"
 tags:
     - programming
     - GatsbyJS

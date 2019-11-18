@@ -4,8 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo/UserInfo";
 // ! Not working so trying 'disqus-react' instead
-// import Disqus from "../components/Disqus/Disqus"; 
-import { DiscussionEmbed } from 'disqus-react' 
+import Disqus from "../components/Disqus/Disqus"; 
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
@@ -52,8 +51,8 @@ export default class PostTemplate extends React.Component {
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
             <UserInfo config={config} />
-            {/* <Disqus postNode={postNode} /> */}
-            <DiscussionEmbed {...disqusConfig({ slug, title })} /> 
+            <Disqus postNode={postNode} />
+            {/* <DiscussionEmbed {...disqusConfig({ slug, title })} />  */}
             <Footer config={config} />
           </div>
         </div>
