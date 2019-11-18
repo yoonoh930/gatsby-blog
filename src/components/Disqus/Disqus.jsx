@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import ReactDisqusComments from "react-disqus-comments";
+import { Disqus } from 'gatsby-plugin-disqus'
 import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
 
-class Disqus extends Component {
+class DisqusClass extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,17 +36,23 @@ class Disqus extends Component {
       config.pathPrefix,
       postNode.fields.slug
     );
+    const disqusConfig = {
+      url: url,
+      identifier: post.title,
+      title: post.title
+    };
     return (
-      <ReactDisqusComments
-        shortname={config.disqusShortname}
-        identifier={post.title}
-        title={post.title}
-        url={url}
-        category_id={post.category_id}
-        onNewComment={this.notifyAboutComment}
-      />
+      // <ReactDisqusComments
+      //   shortname={config.disqusShortname}
+      //   identifier={post.title}
+      //   title={post.title}
+      //   url={url}
+      //   category_id={post.category_id}
+      //   onNewComment={this.notifyAboutComment}
+      // />
+      <Disqus config={disqusConfig}/>
     );
   }
 }
 
-export default Disqus;
+export default DisqusClass;
