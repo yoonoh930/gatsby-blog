@@ -32,6 +32,9 @@ build/Release
 node_modules
 jspm_packages
 
+# Directory for drafts
+drafts
+
 # Optional npm cache directory
 .npm
 
