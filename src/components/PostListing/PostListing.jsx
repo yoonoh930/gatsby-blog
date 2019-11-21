@@ -24,17 +24,17 @@ class PostListing extends React.Component {
     const postList = this.getPostList();
     const ArticleLink = styled(Link)`
     text-decoration: none;
-    color: #000;
+    color: ${p => p.theme.black};
     transition: opacity 0.25s;;
     -webkit-tap-highlight-color: rgba(255, 255, 55, 0);
 
     &:hover h2,
     &:focus h2 {
-    color: #6166DC;
+    color: ${p => p.theme.hover};
   }
   `
   const TitleDate = styled.span`
-    color: #bbb;
+    color: ${p => p.theme.unaccent};
     font-size: 1.3rem;
   `
     return (

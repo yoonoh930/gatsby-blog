@@ -7,7 +7,7 @@ const StyledLink = styled(Link)`
     font-weight: 700;
     align-items: center;
     text-decoration: none;
-    color: #000;
+    color: ${p => p.theme.black};
 `;
 
 const Nav = styled.nav`
@@ -18,7 +18,7 @@ const Nav = styled.nav`
     align-items: center;
     a {
         margin-left: 2rem;
-        color: #cecece;
+        color: ${p => p.theme.navColor};
         text-decoration: none;
     }
 `;
