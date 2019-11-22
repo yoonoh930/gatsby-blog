@@ -47,7 +47,6 @@ export const globalStyles = css`
     kbd,
     pre,
     samp {
-        display: block;
         font-family: Menlo;
         font-size: 1.3rem;
     }
