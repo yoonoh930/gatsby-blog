@@ -12,6 +12,11 @@
   --vscode-highlight-line-highlighted-border-width: 5px; /* default: 2px */
 }
 
+blockquote > p {
+  font-family: PlayfairDisplay-Regular;
+  font-size: 3rem;
+}
+
 /* .vscode-highlight-code {
   font-family: Menlo;
 } */

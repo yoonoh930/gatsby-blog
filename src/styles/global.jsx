@@ -5,9 +5,14 @@ export const globalStyles = css`
     @font-face {
         font-family: "-apple-system", "BlinkMacSystemFont", "San Francisco",
         "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI",
-        "Arial", sans-serif;
+        "Arial", "playfair_regular", sans-serif;
         font-weight: 400;
         font-style: normal;
+    }
+
+    @font-face {
+        font-family: "PlayfairDisplay-Regular";
+        src: url("src/fonts/PlayfairDisplay-Regular.ttf");
     }
 
     // *,
