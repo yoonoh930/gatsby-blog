@@ -12,6 +12,10 @@
   --vscode-highlight-line-highlighted-border-width: 5px; /* default: 2px */
 }
 
+/* .vscode-highlight-code {
+  font-family: Menlo;
+} */
+
 .vscode-highlight-line::before {
   counter-increment: line;
   content: counter(line);

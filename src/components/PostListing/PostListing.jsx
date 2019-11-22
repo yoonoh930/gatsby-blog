@@ -21,7 +21,9 @@ class PostListing extends React.Component {
 
 
   render() {
+
     const postList = this.getPostList();
+
     const ArticleLink = styled(Link)`
     text-decoration: none;
     color: ${p => p.theme.black};
@@ -32,11 +34,13 @@ class PostListing extends React.Component {
     &:focus h2 {
     color: ${p => p.theme.hover};
   }
-  `
+  `;
+
   const TitleDate = styled.span`
     color: ${p => p.theme.unaccent};
     font-size: 1.3rem;
-  `
+  `;
+
     return (
       <div>
         {/* Your post list here. */
@@ -48,6 +52,7 @@ class PostListing extends React.Component {
         ))}
       </div>
     );
+    
   }
 }
 

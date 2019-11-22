@@ -10,7 +10,6 @@ import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
-//import "./b16-tomorrow-dark.css";
 import "./post.css";
 
 export const disqusConfig = ({ slug, title }) => ({
@@ -24,7 +23,6 @@ export default class PostTemplate extends React.Component {
     const { slug } = pageContext;
     const postNode = data.markdownRemark;
     const post = postNode.frontmatter;
-    const title = post.title;
     if (!post.id) {
       post.id = slug;
     }
@@ -41,7 +39,7 @@ export default class PostTemplate extends React.Component {
           <div  style={{ 
               marginLeft: `auto`,
               marginRight: `auto`,
-              maxWidth: `45rem`,
+              maxWidth: `70rem`,
             }}
           >
             <h1>{post.title}</h1>
