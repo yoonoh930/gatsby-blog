@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { Global } from "@emotion/core"
 
 import config from "../../data/SiteConfig";
-import NavBar from "./Nav"
+import NavBar from "../components/Nav"
 import "./index.css";
 
 import { globalStyles } from "../styles"

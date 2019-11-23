@@ -1,6 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from '@emotion/styled'
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from '@emotion/styled';
+
+import Icon from "../../assets/default.inline.svg"
+
 
 const StyledLink = styled(Link)`
     display: flex;
@@ -27,13 +30,28 @@ const NavBarWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-`
+`;
+
+const LogoWrapper = styled.div`
+    width: 3rem;
+    height: 3rem;
+`;
+
+const LogoNameWrapper = styled.div`
+    display: inherit;
+    flex-direction: inherit;
+`;
 
 const NavBar = () => (
     <NavBarWrapper>
-        <StyledLink to="/">
-        Yoon's Blog
-        </StyledLink>
+        <LogoNameWrapper>
+            <LogoWrapper>
+                <Icon />
+            </LogoWrapper>
+            <StyledLink to="/">
+            Yoon's Blog
+            </StyledLink>
+        </LogoNameWrapper>
         <Nav>
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>

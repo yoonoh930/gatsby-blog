@@ -10,7 +10,7 @@ import mediaqueries from "@styles/media";
 
 /**
  *  Learned a lot from Novela:
- *  https://github.com/XXIIVV/Oscean/tree/master/resources/fonts
+ *  https://novela.narative.co/
  *  Thank you
  */
 
