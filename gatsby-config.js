@@ -2,6 +2,10 @@ const urljoin = require("url-join");
 const path = require("path");
 const config = require("./data/SiteConfig");
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
@@ -182,6 +186,13 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      resolve: "@jamesdanylik/gatsby-source-goodreads",
+      options: {
+        key: process.env.GOODREADS_API,
+        id: '94512530'
+      },
     },
     {
       resolve: `gatsby-plugin-disqus`,

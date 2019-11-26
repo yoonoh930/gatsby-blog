@@ -50,6 +50,8 @@ drafts
 # Yarn Integrity file
 .yarn-integrity
 
+# Env
+.env.*
 
 # Build Files
 public/

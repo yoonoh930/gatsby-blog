@@ -13,7 +13,7 @@ import config from "../../data/SiteConfig";
 import "./post.css";
 
 export const disqusConfig = ({ slug, title }) => ({
-  shortname: process.env.GATSBY_DISQUS_NAME,
+  shortname: https-yoons-blog,
   config: { identifier: slug, title },
 })
 

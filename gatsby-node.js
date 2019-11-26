@@ -39,6 +39,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  if (stage === "develop") {
+    actions.setWebpackConfig({
+      devtool: "eval-source-map",
+    })
+  }
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const postPage = path.resolve("src/templates/post.jsx");
