@@ -45,6 +45,7 @@ export const query = graphql`
           }
           started_at
           read_at
+          date_added
         }
         name
       }
