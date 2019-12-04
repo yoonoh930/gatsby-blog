@@ -62,3 +62,7 @@ public/
 
 # Bundle stats
 bundle-stats.json
+
+# VS code config
+.vscode
+extensions
