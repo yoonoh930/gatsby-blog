@@ -58,8 +58,9 @@ export default Listing;
 export const listingQuery = graphql`
   query ListingQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { fields: [fields___date], order: DESC }
-      limit: $limit
+      sort: { fields: [fields___date], order: DESC },
+      filter: {frontmatter: {category: {nin: ["Wiki", "wiki"]}}},
+      limit: $limit,
       skip: $skip
     ) {
       edges {

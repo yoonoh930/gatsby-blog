@@ -56,6 +56,7 @@ const NavBar = () => (
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/books">Readings</Link>
+            <Link to="/wiki">Wiki</Link>
         </Nav>
     </NavBarWrapper>
 );
